@@ -148,6 +148,21 @@ h1 {
   padding: 1.5rem;
 }
 
+.linked-card {
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.linked-card:hover,
+.linked-card:focus-within {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.linked-card a {
+  display: block;
+  height: 100%;
+}
+
 .card h3,
 .timeline h3 {
   margin-top: 0;
