@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Apple Notes Migration | Kerry Newland</title>
-  <meta name="description" content="Apple Notes Migration project page coming soon.">
+  <meta name="description" content="A shipped self-service macOS Apple Notes migration utility for device replacements, rebuilds and fleet refresh workflows.">
 
   <link rel="stylesheet" href="../style.css">
 </head>
@@ -24,12 +24,129 @@
 
   <main>
     <section class="hero project-hero">
-      <p class="eyebrow">Independent Project</p>
+      <p class="eyebrow">Professional Work</p>
       <h1>Apple Notes Migration</h1>
-      <p class="hero-copy">Coming soon.</p>
+      <p class="hero-copy">
+        Designed and deployed a self-service Apple Notes migration utility for macOS users,
+        enabling export and restoration of local notes during device replacements, repairs and rebuilds.
+      </p>
       <div class="hero-actions">
         <a class="button secondary" href="../#projects">Back to projects</a>
       </div>
+    </section>
+
+    <section class="section">
+      <h2>Problem</h2>
+      <p>
+        Apple Notes is not covered cleanly by many standard migration workflows. Users often discover the
+        gap after a Mac rebuild, repair or replacement, when local notes data has not followed them to the
+        new device.
+      </p>
+      <p>
+        The required files live inside the user library and Group Containers, which makes the process
+        repetitive, hard to guide remotely and easy to get wrong when performed manually.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Solution</h2>
+      <p>
+        Built a simple AppleScript app that copied the three required Apple Notes files from the user's
+        library and Group Containers, bundled them with an installer script and produced a zipped migration
+        bundle.
+      </p>
+      <p>
+        The user could AirDrop, Slack or save the bundle to Google Drive before wiping or replacing the Mac,
+        then run the included installer on the replacement device to place the files back in the correct
+        location.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Use Cases</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Fleet Refresh</h3>
+          <p>Supported routine Mac replacements during a three-year refresh cycle across the APJ region.</p>
+        </article>
+
+        <article class="card">
+          <h3>Rebuilds</h3>
+          <p>Preserved local Apple Notes data when troubleshooting required erase and reconfiguration.</p>
+        </article>
+
+        <article class="card">
+          <h3>Repairs</h3>
+          <p>Helped users move notes through temporary deployments, repair swaps and return-to-device workflows.</p>
+        </article>
+
+        <article class="card">
+          <h3>Remote Support</h3>
+          <p>Reduced a guided, error-prone support task into a simple self-service export and restore flow.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Implementation</h2>
+      <div class="timeline">
+        <article>
+          <h3>Locate the required data</h3>
+          <p>Identified the Apple Notes files required for local note migration inside user Library and Group Containers paths.</p>
+        </article>
+
+        <article>
+          <h3>Package for movement</h3>
+          <p>Automated collection of the files and bundled them with an installer script into a portable zipped package.</p>
+        </article>
+
+        <article>
+          <h3>Restore on the replacement Mac</h3>
+          <p>Used the included installer to place the files back into the correct macOS locations on the destination device.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Impact</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Recurring Issue</h3>
+          <p>The problem appeared at least weekly in APJ, and often multiple times per week during active support periods.</p>
+        </article>
+
+        <article class="card">
+          <h3>Device Volume</h3>
+          <p>Supported an environment with roughly 20 to 40 Mac replacements per year on a three-year refresh cycle.</p>
+        </article>
+
+        <article class="card">
+          <h3>Time Saved</h3>
+          <p>Reduced a user-guided migration from around 15 minutes to less than a minute in common remote-support cases.</p>
+        </article>
+
+        <article class="card">
+          <h3>Self-service</h3>
+          <p>Turned a repetitive IT-handled task into a user-run workflow with more consistent migration outcomes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Outcome</h2>
+      <p>
+        The utility reduced support effort, improved consistency and let users retain critical Apple Notes
+        data during device transitions. Its strongest value showed up in remote support, where a tedious
+        guided navigation process became a short double-click workflow.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Lessons Learned</h2>
+      <p>
+        Small utilities can have outsized operational value when they target a repetitive support task with
+        hidden file paths, fragile manual steps and a clear self-service path for users.
+      </p>
     </section>
   </main>
 
