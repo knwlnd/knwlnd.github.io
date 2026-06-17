@@ -80,6 +80,10 @@ main {
   max-width: 850px;
 }
 
+.project-hero {
+  padding-bottom: 4rem;
+}
+
 .eyebrow {
   color: var(--accent);
   font-weight: 600;
@@ -141,6 +145,25 @@ h1 {
   gap: 1rem;
 }
 
+.work-pattern {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.project-group {
+  margin-top: 2.25rem;
+}
+
+.project-group > h3 {
+  margin: 0 0 1rem;
+  color: var(--accent);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .card {
   background: var(--panel);
   border: 1px solid var(--border);
@@ -170,6 +193,19 @@ h1 {
   letter-spacing: -0.02em;
 }
 
+.plain-list,
+.step-list {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.plain-list li,
+.step-list li {
+  margin: 0.45rem 0;
+}
+
 .timeline {
   display: grid;
   gap: 1.5rem;
@@ -180,6 +216,60 @@ h1 {
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 1.5rem;
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.screenshot-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 0;
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--panel);
+}
+
+.screenshot-card::after {
+  content: "Blurred preview";
+  position: absolute;
+  inset: auto 0 0;
+  padding: 0.85rem 1rem;
+  background: linear-gradient(180deg, transparent, rgba(15, 17, 21, 0.94) 42%);
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.screenshot-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 846 / 1660;
+  object-fit: cover;
+  filter: blur(8px) saturate(0.85) brightness(0.78);
+  transform: scale(1.04);
+  user-select: none;
+  pointer-events: none;
+}
+
+.screenshot-card figcaption {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 2.5rem;
+  z-index: 1;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 650;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.75);
 }
 
 .contact {
@@ -217,7 +307,21 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .work-pattern {
+    grid-template-columns: 1fr;
+  }
+
+  .screenshot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .section {
     padding: 3.5rem 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .screenshot-grid {
+    grid-template-columns: 1fr;
   }
 }
