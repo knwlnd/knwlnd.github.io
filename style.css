@@ -91,7 +91,7 @@ main {
 }
 
 .hero:not(.project-hero) > .eyebrow {
-  transform: translateY(-1.6em);
+  transform: translateY(-0.8em);
 }
 
 h1 {
