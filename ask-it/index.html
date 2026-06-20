@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ask-it Programme | Kerry Newland</title>
-  <meta name="description" content="A selected work example covering internal AI enablement, workflow design, implementation patterns and operational adoption.">
+  <meta name="description" content="A four-project global internal AI programme covering self-service support, help desk tooling, Guru knowledge architecture, RAG safety and automated QA.">
 
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="icon" href="../favicon-32x32.png" sizes="32x32" type="image/png">
@@ -30,8 +30,8 @@
       <p class="eyebrow">Selected Work</p>
       <h1>ask-it Programme</h1>
       <p class="hero-copy">
-        Internal AI enablement work focused on turning recurring operational questions,
-        fragmented guidance and support workflows into practical tools with clear feedback loops.
+        A four-project global AI programme improving access to IT guidance for a 30-person support
+        organisation and up to 2,800 employees through self-service, internal tooling and automated QA.
       </p>
       <div class="hero-actions">
         <a class="button secondary" href="../#projects">Back to projects</a>
@@ -41,36 +41,177 @@
     <section class="section">
       <h2>Problem</h2>
       <p>
-        Operational teams needed faster access to accurate internal guidance while keeping the experience
-        structured enough to support adoption, quality review and continuous improvement.
+        IT teams were handling repeated questions that created clear self-service opportunities, but
+        employees and support staff lacked a fast, reliable way to access accurate internal guidance.
+        The existing Guru knowledge base was poorly maintained, out of date and difficult to navigate.
       </p>
       <p>
-        The work involved ambiguous requirements, changing stakeholder expectations and the need to
-        balance useful automation with practical controls.
+        The ask-it v1 recovery and wider IT Support Quality initiative required both the knowledge source
+        and the AI experience built on top of it to be redesigned. The challenge was to improve human
+        usability while creating content boundaries that reduced hallucinations and mixed guidance in
+        retrieval-augmented generation workflows.
       </p>
     </section>
 
     <section class="section">
-      <h2>Approach</h2>
+      <h2>Scope &amp; Role</h2>
       <div class="grid">
         <article class="card">
-          <h3>Workflow Design</h3>
-          <p>Mapped common support patterns, user intents and escalation points into a clearer tool experience.</p>
+          <h3>Global Scope</h3>
+          <p>
+            Built tools and knowledge workflows for a global IT department of approximately 30 people and
+            user-facing services with a potential audience of approximately 2,800 employees.
+          </p>
         </article>
 
         <article class="card">
-          <h3>Feedback Loops</h3>
-          <p>Designed review paths so responses, gaps and edge cases could be captured and improved over time.</p>
+          <h3>Project Owner &amp; Builder</h3>
+          <p>
+            Owned the programme and served as the core or sole contributor across product design,
+            development, knowledge architecture, operational recovery, QA and documentation.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Four Project Workstreams</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>ask-it Internal</h3>
+          <p>
+            Conceived, designed, coded and deployed a Chrome extension giving the global IT Help Desk
+            immediate AI-powered access to internal knowledge and supporting sources.
+          </p>
         </article>
 
         <article class="card">
-          <h3>Implementation Patterns</h3>
-          <p>Separated user-facing flows, internal review surfaces and supporting analysis tools.</p>
+          <h3>ask-it v1 Recovery</h3>
+          <p>
+            Inherited a minimally documented Slack bot, reverse-engineered its architecture and built the
+            operating, governance, reporting and knowledge-management model around it.
+          </p>
         </article>
 
         <article class="card">
-          <h3>Operational Adoption</h3>
-          <p>Focused on usable interfaces, clear handoffs and outcomes that could fit real team workflows.</p>
+          <h3>ask-it v2 Development</h3>
+          <p>
+            Led a ground-up redesign of the user-facing bot, introducing improved workflows, richer
+            interactions, analytics and more maintainable backend integration patterns.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>ask-it QA Tool</h3>
+          <p>
+            Designed and built a quality-assurance tool that scored real bot answers and converted failures
+            into structured recommendations for improving the source knowledge.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Project Delivery</h2>
+      <div class="timeline">
+        <article>
+          <h3>Internal Help Desk extension</h3>
+          <p>
+            Built a Chrome extension integrating internal Guru knowledge, monday.com boards, Slack data and
+            vendor documentation. Iterated through more than six prompt versions, displayed response sources
+            as clickable links and added mandatory written feedback for negative ratings.
+          </p>
+        </article>
+
+        <article>
+          <h3>v1 operational recovery</h3>
+          <p>
+            Reconstructed the inherited Workato and Slack bot architecture, documented it for the first
+            time and established monthly QA, answer review, team assignment, results preparation and
+            leadership reporting processes.
+          </p>
+        </article>
+
+        <article>
+          <h3>v2 platform design</h3>
+          <p>
+            Developed multi-turn conversation threading, access-request automation, image-assisted
+            troubleshooting, usage analytics and Okta group integration. Refactored n8n workflows to remove
+            hard-coded lists and integrated monday.com item creation and updates through its API.
+          </p>
+        </article>
+
+        <article>
+          <h3>Automated quality assurance</h3>
+          <p>
+            Built a pipeline to evaluate real questions and answers as correct, partially correct or
+            incorrect, then produce structured Guru improvement recommendations for each failure.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Knowledge System Rebuild</h2>
+      <div class="timeline">
+        <article>
+          <h3>Audit the existing knowledge base</h3>
+          <p>
+            Reviewed 255 existing Guru cards to identify outdated guidance, unclear ownership,
+            duplicated content and articles containing multiple unrelated support scenarios.
+          </p>
+        </article>
+
+        <article>
+          <h3>Rebuild around single scenarios</h3>
+          <p>
+            Split, rewrote and clarified the original cards into 450 focused articles. Each article was
+            structured around a single support scenario so it could be found quickly, shared directly with
+            users and understood without unrelated context.
+          </p>
+        </article>
+
+        <article>
+          <h3>Design for reliable retrieval</h3>
+          <p>
+            Reworked content for retrieval-augmented generation, using clearer boundaries and more focused
+            guidance to reduce hallucinations and prevent AI endpoints from combining instructions from
+            unrelated scenarios.
+          </p>
+        </article>
+
+        <article>
+          <h3>Classify ingestion safety</h3>
+          <p>
+            Created a Bot-Safe Guru Mapping board in monday.com and reviewed all 450 articles to determine
+            whether each was suitable for ask-it ingestion. A curated collection of 196 approved articles
+            was maintained for the conservative v1 production knowledge set.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Programme Approach</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Knowledge Architecture</h3>
+          <p>Established a repeatable framework for focused, searchable and AI-ingestible support articles.</p>
+        </article>
+
+        <article class="card">
+          <h3>Connected Knowledge Graph</h3>
+          <p>Linked remote support, user management, deployment and bot-safe Guru content into a connected system.</p>
+        </article>
+
+        <article class="card">
+          <h3>Quality Controls</h3>
+          <p>Combined ingestion-safety mapping, feedback capture, monthly reviews and automated QA to manage quality.</p>
+        </article>
+
+        <article class="card">
+          <h3>System Documentation</h3>
+          <p>Created and maintained system architecture documentation covering knowledge and application components.</p>
         </article>
       </div>
     </section>
@@ -84,6 +225,11 @@
         </article>
 
         <article>
+          <h3>Curated knowledge layer</h3>
+          <p>Used focused, classified Guru articles as a controlled source for retrieval and response generation.</p>
+        </article>
+
+        <article>
           <h3>Internal review surfaces</h3>
           <p>Supported QA, commentary and review workflows for improving reliability and operational usefulness.</p>
         </article>
@@ -91,6 +237,68 @@
         <article>
           <h3>Analysis tooling</h3>
           <p>Included supporting tools for endpoint analysis and prompt or response evaluation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Governance &amp; Measurement</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Project Controls</h3>
+          <p>
+            Produced project initiation, risk, communications, rollout, ownership and technical
+            documentation so delivery and handover did not depend on undocumented context.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Operational Reporting</h3>
+          <p>
+            Built results boards and reported monthly on questions, ticket creation, user feedback and
+            automatically resolved tickets to senior IT and departmental leadership.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>KPI Framework</h3>
+          <p>
+            Defined targets covering internal resource use, ticket resolution time, systems-team
+            escalations, positive feedback and adoption across the global Help Desk.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Known Failure Modes</h3>
+          <p>
+            Identified and managed noisy data, archived content appearing in answers, multi-topic
+            cross-contamination and the bot responding to messages that were not questions.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Technologies</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Knowledge &amp; AI</h3>
+          <p>Internal AI platforms, Guru and Claude for knowledge retrieval, restructuring, review and response workflows.</p>
+        </article>
+
+        <article class="card">
+          <h3>Automation &amp; Integration</h3>
+          <p>Slack, Workato and n8n for user interactions, workflow orchestration and system integrations.</p>
+        </article>
+
+        <article class="card">
+          <h3>Development</h3>
+          <p>JavaScript and Python for browser tooling, workflow logic, analysis and quality-assurance automation.</p>
+        </article>
+
+        <article class="card">
+          <h3>Programme Management</h3>
+          <p>monday.com for delivery tracking, results reporting, article mapping and ingestion-safety classification.</p>
         </article>
       </div>
     </section>
@@ -149,32 +357,47 @@
       <h2>Outcomes</h2>
       <div class="grid">
         <article class="card">
-          <h3>Clearer Access to Guidance</h3>
-          <p>Reduced friction around finding operational answers and understanding the next action.</p>
+          <h3>255 Cards Fully Rebuilt</h3>
+          <p>Audited, split, rewritten and clarified the complete legacy Guru knowledge set.</p>
         </article>
 
         <article class="card">
-          <h3>Improvement Mechanism</h3>
-          <p>Created a path for feedback, QA and refinement rather than treating AI output as a static endpoint.</p>
+          <h3>450 Focused Articles</h3>
+          <p>Created single-scenario guidance that was easier to find, share, maintain and retrieve accurately.</p>
         </article>
 
         <article class="card">
-          <h3>Reusable Patterns</h3>
-          <p>Established design and implementation patterns that could support adjacent operational workflows.</p>
+          <h3>450 Safety Reviews</h3>
+          <p>Reviewed and classified every rebuilt article for safe use within ask-it ingestion workflows.</p>
         </article>
 
         <article class="card">
-          <h3>Practical Adoption</h3>
-          <p>Centred the work on real team usage, operational fit and maintainable handoff points.</p>
+          <h3>500+ QA Evaluations</h3>
+          <p>Executed more than 500 automated response evaluations during April 2026.</p>
+        </article>
+
+        <article class="card">
+          <h3>Closed Improvement Loop</h3>
+          <p>Connected questions, responses, QA scores, knowledge gaps, content updates and re-testing.</p>
+        </article>
+
+        <article class="card">
+          <h3>Documented Handover</h3>
+          <p>Left v1 stable and documented, with a defined ownership path, operating model and historical reporting.</p>
         </article>
       </div>
+      <p>
+        The rebuild gave users and IT teams clearer guidance while providing ask-it with a more controlled
+        retrieval source designed to reduce hallucinations and conflicting multi-scenario responses.
+      </p>
     </section>
 
     <section class="section">
       <h2>Lessons Learned</h2>
       <p>
-        Useful internal AI tooling depends less on novelty and more on workflow fit, review discipline,
-        clear boundaries and the ability to learn from real usage.
+        Reliable internal AI depends on the quality and structure of its source knowledge. Focused content,
+        explicit ingestion controls, system documentation and ongoing review are as important as the
+        user-facing AI experience.
       </p>
     </section>
   </main>
